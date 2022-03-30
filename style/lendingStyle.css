@@ -1,0 +1,168 @@
+.gun-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.gun-container img {
+    width: 100%;
+}
+
+.quote-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.quote {
+    position: relative;
+    top: 58%;
+    left: 40%;
+    width: 35%;
+    color: #fff;
+}
+
+.quote span {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+}
+
+.quote p {
+    margin: min(2.5vw, 140%);
+}
+
+.quote .line {
+    font-size: min(2.0vw, 100%);
+}
+
+.quote .author {
+    font-size: min(1.5vw, 80%);
+}
+
+.squares-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.square {
+    --width: 200px;
+    --height: 200px;
+    width: var(--width);
+    height: var(--height);
+    margin: 10px;
+    background-color: #588B8B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 480px) {
+    .square {
+        --width: 150px;
+        --height: 150px;
+        margin: 5px;
+        font-size: 0.7em;
+    }
+    .squares-container {
+        max-width: 400px;
+        min-width: 340px;
+    }
+}
+
+.square h3 {
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #C8553D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 0;
+}
+
+.square:hover {
+    box-shadow: 0 5px 20px 5px rgba(144, 144, 144, 0.4);
+}
+
+.square img {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.video-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffd5c2;
+}
+
+.video-container * {
+    margin: 10px;
+}
+
+.video-container video {
+    width: 45%;
+}
+
+.has-border {
+    border: 3px solid #f28f3b;
+}
+
+.form-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffd5c2;
+}
+
+.form-container>* {
+    margin: 10px;
+}
+
+.form-container h3 {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form *:not(textarea) {
+    width: 300px;
+    font-size: 0.8em;
+}
+
+form button {
+    width: 100px;
+}
+
+form * {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid rgba(88, 139, 139, 0.7);
+}

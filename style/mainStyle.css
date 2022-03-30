@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Main Font";
+    src: url("../media/fonts/SourceSerif4-VariableFont_opsz\,wght.ttf");
+}
+
+body {
+    font-family: "Main Font", serif;
+    margin: 0px;
+    background-color: #222;
+}
+
+header,
+main,
+footer {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 960px) {
+    header,
+    main,
+    footer {
+        width: 960px;
+    }
+}
+
+header {
+    background: #588B8B;
+}
+
+footer {
+    border: 1px solid #000000;
+    background: #C8553D;
+}
+
+footer p {
+    margin-left: 30px;
+    width: 200px;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 0;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 60px;
+}
+
+.logo-image:hover {
+    content: url(../media/logo/Logo_active.svg);
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    align-items: stretch;
+}
+
+.menu li {
+    display: flex;
+    align-items: stretch;
+}
+
+.menu li a {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #eee;
+    text-align: center;
+    align-items: center;
+}
+
+.menu li a:hover {
+    background-color: #487B7B;
+}
+
+.menu .selected a {
+    background-color: #C8553D;
+}
+
+.menu .selected a:hover {
+    background-color: #B8452D;
+}
+
+@media screen and (max-width: 540px) {
+    .navbar,
+    .menu,
+    .menu li,
+    .menu li a,
+    nav {
+        flex-direction: column;
+    }
+    .menu li a {
+        padding: 5px 20px;
+        margin: 2px 0px;
+    }
+}
+
+ul {
+    margin: 0;
+}
+
+.links {
+    margin-top: 10px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links img {
+    filter: invert(100%);
+    display: inline;
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    transition: 0.2s;
+}
+
+.links img:hover {
+    transform: scale(1.1);
+    transition: 0.05s;
+}
